@@ -9,6 +9,9 @@ const refs = {
 const INTERVAL_DURATION = 1000;
 let intervalId = null;
 
+refs.startBtn.disabled = false;
+refs.stopBtn.disabled = true;
+
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }

@@ -16,24 +16,34 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
 button[data-start], button[data-stop]{
-  width: 70px;
+  width: 100px;
   height: 35px;
 
   background-color: lightblue;
   border-radius: 4px;
   border-color: teal;
   color: teal;
-  transition: ;
+  font-size: 14px;
+  
+  transition: background-color 250ms linear;
 }
 
 button[data-start]:hover,
 button[data-stop]:hover{
   background-color: white;
 }
-.buttons{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
+
+button[data-start]:disabled,
+button[data-stop]:disabled{
+  background-color: rgb(188, 214, 223);
 }
+
