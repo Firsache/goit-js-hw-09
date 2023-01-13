@@ -24,7 +24,7 @@ img {
   gap: 15px;
 }
 
-button[data-start], button[data-stop]{
+button[data-start], button[data-stop], button[data-submit]{
   width: 100px;
   height: 35px;
 
@@ -38,7 +38,8 @@ button[data-start], button[data-stop]{
 }
 
 button[data-start]:hover,
-button[data-stop]:hover{
+button[data-stop]:hover,
+button[data-submit]:hover{
   background-color: white;
 }
 
