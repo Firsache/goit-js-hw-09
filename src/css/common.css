@@ -36,6 +36,12 @@ button[data-start], button[data-stop], button[data-submit]{
   
   transition: background-color 250ms linear;
 }
+button{
+  min-width: 150px;
+}
+button[data-start], button[data-submit]{
+  margin-left: 10px;
+}
 
 button[data-start]:hover,
 button[data-stop]:hover,

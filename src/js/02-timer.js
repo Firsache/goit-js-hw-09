@@ -4,12 +4,12 @@ import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import 'notiflix/dist/notiflix-notify-aio-3.2.6.min.js';
 
 const refs = {
-    startBtn: document.querySelector('[data-start'),
+    startBtn: document.querySelector('[data-start]'),
     inputPickedTime: document.querySelector('#datetime-picker'),
-    daysEL: document.querySelector('[data-days'),
-    hoursEL: document.querySelector('[data-hours'),
-    minutesEL: document.querySelector('[data-minutes'),
-    secondsEL: document.querySelector('[data-seconds')
+    daysEL: document.querySelector('[data-days]'),
+    hoursEL: document.querySelector('[data-hours]'),
+    minutesEL: document.querySelector('[data-minutes]'),
+    secondsEL: document.querySelector('[data-seconds]')
 };
 
 const INTERVAL_DELAY = 1000;
@@ -45,10 +45,10 @@ const options = {
                     return;
                 }
                 const { days, hours, minutes, seconds } = convertMs(timeDifference);
-                refs.daysEL.innerHTML = pad(days);
-                refs.hoursEL.innerHTML = pad(hours);
-                refs.minutesEL.innerHTML = pad(minutes);
-                refs.secondsEL.innerHTML = pad(seconds);
+                refs.daysEL.textContent = pad(days);
+                refs.hoursEL.textContent = pad(hours);
+                refs.minutesEL.textContent = pad(minutes);
+                refs.secondsEL.textContent = pad(seconds);
                 
             }, INTERVAL_DELAY);
         }
