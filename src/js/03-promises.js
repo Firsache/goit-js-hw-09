@@ -9,9 +9,9 @@ refs.formEl.addEventListener('submit', onFormSubmit);
 function onFormSubmit(evt) {
   evt.preventDefault();
 
-  let firstDelay = Number(refs.formEl.elements.delay.value);
-  const delayStep = Number(refs.formEl.elements.step.value);
-  const amountPromise = Number(refs.formEl.elements.amount.value);
+  let firstDelay = Number(evt.currentTarget.elements.delay.value);
+  const delayStep = Number(evt.currentTarget.elements.step.value);
+  const amountPromise = Number(evt.currentTarget.elements.amount.value);
 
   for (let i = 1; i <= amountPromise; i++, firstDelay += delayStep) {
     createPromise(i, firstDelay)
